@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Function Chatbot</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Multi-Function Chatbot</h1>
+    </header>
+    <main>
+        <section id="bot-selection">
+            <h2>Select a Chatbot</h2>
+            <div class="bot-options">
+                <button data-bot="grammar">Grammar & Translation Bot</button>
+                <button data-bot="dictionary">Dictionary & Thesaurus Bot</button>
+                <button data-bot="learning">English Learning Bot</button>
+                <button data-bot="js-assistant">JavaScript Assistant Bot</button>
+                <button data-bot="recipe-planner">Recipe Planner Bot</button>
+            </div>
+        </section>
+        <section id="chat-interface" style="display: none;">
+            <div id="chat-container">
+                <h2 id="bot-name">Chatbot</h2>
+                <div id="response-container"></div>
+                <div id="input-area">
+                    <input type="text" id="user-input" placeholder="Type your question here...">
+                    <button id="send-btn">Send</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
